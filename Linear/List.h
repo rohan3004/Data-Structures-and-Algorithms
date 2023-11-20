@@ -1,4 +1,17 @@
-/*Copyright © Rohan Chakaravarty*/
+/*Copyright© 2023 Rohan Chakaravarty
+This header file contains doubly linked list:
+    -> Inertion at begining & end
+    -> Deletion at begining & end
+    -> Displying the Linked list and also in reverse order
+    -> To return size
+    -> To return the head node and also the tail node
+    -> Sorting the Linked list using Merge Sort Algorithm
+    
+This header file can be further inherited in "Queue.h" & "Stack.h"
+
+This is opensource project and feel free contribute*/
+
+
 #ifndef LIST_H
 #define LIST_H
 

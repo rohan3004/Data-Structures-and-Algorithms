@@ -1,3 +1,8 @@
+/*Copyright© 2023 Rohan Chakaravarty
+This header file contains Floyd Warshall Algorithm:    
+
+This is opensource project and feel free contribute*/
+
 #ifndef FLOYD_WARSHALL_H
 #define FLOYD_WARSHALL_H
 

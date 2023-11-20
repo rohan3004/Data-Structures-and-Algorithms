@@ -1,3 +1,17 @@
+/*Copyright© 2023 Rohan Chakaravarty
+This header file includes "List.h":
+    -> First In First Out
+    -> To empty the Queue
+    -> Pushing element into the Queue from the back
+    -> Poping element into the Queue from the front
+    -> Displying the Queue
+    -> To return size
+    -> To return the front node and also the tail node
+    
+
+This is opensource project and feel free contribute*/
+
+
 #ifndef QUEUE_H
 #define QUEUE_H
 

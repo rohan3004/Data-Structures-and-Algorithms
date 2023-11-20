@@ -1,3 +1,11 @@
+/*Copyright© 2023 Rohan Chakaravarty
+This header file contains Graph Traversal Techniques:
+    -> Breadth First Search
+    -> Depth First Search
+    
+
+This is opensource project and feel free contribute*/
+
 #ifndef GRAPH_H
 #define GRAPH_H
 

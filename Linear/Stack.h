@@ -1,3 +1,17 @@
+/*Copyright© 2023 Rohan Chakaravarty
+This header file includes "List.h":
+    -> Last In First Out
+    -> To empty the Stack
+    -> Pushing element into the Stack from the back
+    -> Poping element into the Stack from the back
+    -> Displying the Stack
+    -> To return size
+    -> To return the top node
+    
+
+This is opensource project and feel free contribute*/
+
+
 #ifndef STACK_H
 #define STACK_H
 
@@ -33,7 +47,7 @@ class Stack{
     }
     void display()
     {
-        cout<<"Elements in the Queue: ";
+        cout<<"Elements in the Stack: ";
         a->display();
     }
     ~Stack()

@@ -1,3 +1,18 @@
+/*Copyright© 2023 Rohan Chakaravarty
+This header file contains Binray Search Tree:
+    -> Insertion in Binary Search Tree
+    -> Deletion in Binray Search Tree
+    -> Tree Traversal:
+        -> Inorder
+        -> Preorder
+        -> Postorder
+    -> Returns Kth Smallest Element
+    -> Returns Kth Largest Element
+    
+
+This is opensource project and feel free contribute*/
+
+
 #ifndef BST_H
 #define BST_H
 

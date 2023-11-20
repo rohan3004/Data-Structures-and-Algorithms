@@ -1,3 +1,13 @@
+/*Copyright© 2023 Rohan Chakaravarty
+This header file includes:
+    -> Vectors
+    -> Doubly Linked List
+    -> Queue
+    -> Stack
+    -> "Sort.h"
+
+This is opensource project and feel free contribute*/
+
 #ifndef LINEAR_H
 #define LINEAR_H
 
