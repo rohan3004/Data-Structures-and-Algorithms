@@ -16,5 +16,6 @@ This is opensource project and feel free contribute*/
 #include "Linear/Queue.h"
 #include "Linear/Stack.h"
 #include "Linear/Sort.h"
+#include "Linear/Heap.h"
 
 #endif
