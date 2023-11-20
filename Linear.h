@@ -4,6 +4,7 @@ This header file includes:
     -> Doubly Linked List
     -> Queue
     -> Stack
+    -> Heaps
     -> "Sort.h"
 
 This is opensource project and feel free contribute*/
