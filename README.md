@@ -13,7 +13,7 @@ Sorting Algorithms, graph traversal algorithms and shortest path algorithms.
 ## About
 
 Linear Header Files -> Heap.h, List.h, Queue.h, Sort.h and Stack.h
-Non-Linear Header Files -> BST.h, Floy_Warshall.h and Graph.h
+Non-Linear Header Files -> BST.h, Floyd_Warshall.h and Graph.h
 
 Hash_Table.h
 
