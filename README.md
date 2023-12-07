@@ -1,36 +1,26 @@
-# Project Name
+# Data Structures and Common Algorithms
 
-Brief description or introduction of your project.
+It contains Linear Data Structures like Linked List, Stack, Queue and Priority Queue (aka Heaps) and non Linear Data Structures like Binary Search Trees, graphs. 
+
+Sorting Algorithms, graph traversal algorithms and shortest path algorithms.
 
 ## Table of Contents
 
 - [About](#about)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- [Installation and Usage](#installation_and_usage)
 - [License](#license)
 
 ## About
 
-Explain what your project is about. Provide context and the problem it solves. Include any relevant information that users or contributors should know.
+Linear Header Files -> Heap.h, List.h, Queue.h, Sort.h and Stack.h
+Non-Linear Header Files -> BST.h, Floy_Warshall.h and Graph.h
 
-## Installation
+Hash_Table.h
 
-Provide instructions on how to install or set up your project. Include prerequisites and any dependencies that need to be installed.
+## Installation and Usage
 
-## Usage
-
-Demonstrate how to use your project. You can include code examples, screenshots, or a step-by-step guide to showcase the functionalities.
-
-## Contributing
-
-Explain how others can contribute to your project. This could include guidelines for bug reporting, feature requests, or code contributions. Make sure to specify your preferred method of receiving contributions (e.g., pull requests, issue tracking).
+Clone the repository and the create a main function then include the pre defined header files and use the data sturctures and algorithm for your next big project.
 
 ## License
 
-Specify the license under which your project is distributed. You can include a link to the license file for more details.
-
-## Additional Information
-
-Add any additional information here that you think might be helpful for users or contributors. This could include acknowledgments, contact information, or links to relevant resources.
-
+Free open source repository.
