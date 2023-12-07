@@ -12,28 +12,28 @@ This is opensource project and feel free contribute*/
 #include <iostream>
 using namespace std;
 class Graph{
-    bool **a;
+    protected:
+    int **Matrix;
     int vertices;
     bool *visited;
     public:
-    Graph(int n)
+    Graph(int n):vertices(n)
     {
-        vertices=n;
         visited = new bool[n];
         // visited={0};
-        a=new bool*[n];
+        Matrix=new int*[n];
         for(int i=0;i<n;i++){
-            a[i] = new bool[n];
+            Matrix[i] = new int[n];
             visited[i]=0;
         }
 
         for(int i=0;i<n;i++)
             for(int j=0;j<n;j++)
-                a[i][j]=0;
+                Matrix[i][j]=0;
     }  
     void addEdge(int v,int w)
     {
-        a[v][w] = 1;
+        Matrix[v][w] = 1;
     }
     void BFS(int s){
         bool visited[vertices]={0};
@@ -48,7 +48,7 @@ class Graph{
             cout<<s<<" ";
             for(int i=0;i<vertices;i++)
             {
-                if(a[s][i] && !visited[i])//if neighbour exist and not visited
+                if(Matrix[s][i] && !visited[i])//if neighbour exist and not visited
                 {
                     visited[i]=1;
                     queue[++rear]=i;
@@ -60,15 +60,15 @@ class Graph{
         cout<<s<<" ";
         visited[s]=1;
         for(int j=0;j<vertices;j++)
-            if(a[s][j] && !visited[j])
+            if(Matrix[s][j] && !visited[j])
                 DFS(j);
     }
     ~Graph()
     {
         for(int i=0;i<vertices;i++)
-            delete a[i];
+            delete Matrix[i];
         
-        delete a;
+        delete Matrix;
     }
 };
 #endif

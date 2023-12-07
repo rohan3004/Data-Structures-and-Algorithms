@@ -6,64 +6,49 @@ This is opensource project and feel free contribute*/
 #ifndef FLOYD_WARSHALL_H
 #define FLOYD_WARSHALL_H
 
+#include "Graph.h"
 #include <iostream>
-#include <vector>
 using namespace std;
 
-#define INF 99999
+#define INF 999999
 
-class Graph {
-private:
-    int V;
-    vector<vector<int>> dist;
+class FloydWarshall:protected Graph {
+    public:
+    FloydWarshall(int n):Graph(n)
+    {
+        for(int i=0;i<n;i++)
+            for(int j=0;j<n;j++)
+                Matrix[i][j]=INF;//it's getting overriden
 
-public:
-    Graph(int vertices) : V(vertices) {
-        dist.resize(V, vector<int>(V, INF));
-        for (int i = 0; i < V; ++i)
-            dist[i][i] = 0; // Distance from a vertex to itself is always 0
+        for(int i=0;i<n;i++)
+            Matrix[i][i]=0; // Distance from a vertex to itself is always 0
     }
-
-    void addEdge(int src, int dest, int weight) {
-        dist[src][dest] = weight;
+    void addEdge(int src, int dest, int weight) { //addEdge Overidden
+    Matrix[src][dest] = weight;
     }
 
     void floydWarshall() {
-        for (int k = 0; k < V; ++k) {
-            for (int i = 0; i < V; ++i) {
-                for (int j = 0; j < V; ++j) {
-                    if (dist[i][k] != INF && dist[k][j] != INF && dist[i][j] > dist[i][k] + dist[k][j]) {
-                        dist[i][j] = dist[i][k] + dist[k][j];
+        for (int k = 0; k < vertices; ++k) {
+            for (int i = 0; i < vertices; ++i) {
+                for (int j = 0; j < vertices; ++j) {
+                    if (Matrix[i][k] != INF && Matrix[k][j] != INF && Matrix[i][j] > Matrix[i][k] + Matrix[k][j]) {
+                        Matrix[i][j] = Matrix[i][k] + Matrix[k][j];
                     }
                 }
             }
         }
 
         // Print the shortest distances
-        cout << "Shortest distances between every pair of vertices:\n";
-        for (int i = 0; i < V; ++i) {
-            for (int j = 0; j < V; ++j) {
-                if (dist[i][j] == INF)
-                    cout << "INF ";
+        cout << "\nShortest distances between every pair of vertices\n";
+        for (int i = 0; i < vertices; ++i) {
+            for (int j = 0; j < vertices; ++j) {
+                if (Matrix[i][j] == INF)
+                    cout << " INF ";
                 else
-                    cout << dist[i][j] << " ";
+                    cout << " "<<Matrix[i][j] <<" ";
             }
             cout << endl;
         }
-    }
-    static void execute()
-    {
-        int V, E;
-        cout << "Enter the number of vertices and edges: ";
-        cin >> V >> E;
-        Graph graph(V);
-        cout << "Enter the edges and their weights (source destination weight):\n";
-        for (int i = 0; i < E; ++i) {
-            int u, v, w;
-            cin >> u >> v >> w;
-            graph.addEdge(u, v, w);
-        }
-        graph.floydWarshall();
     }
 };
 
